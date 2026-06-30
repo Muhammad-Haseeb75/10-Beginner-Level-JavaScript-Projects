@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology</title>
+</head>
+<body style="background-color: black; color: white; display: flex; justify-content: center; align-items: center;align-content: center;">
+    <div id="parent" style="height: 400px; width: 400px;">
+        <h1>Predicting your Future</h1>
+        <form action="submit" style="height: 70%; width: 100%; display: flex; flex-direction: column; justify-content: space-evenly;">
+            <label for="name">Enter Your Name</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="DOB">Enter Your Birthday</label>
+            <input type="date" name="DOB" id="DOB" required>
+
+            <label for="lucky">Add your Lucky number</label>
+            <input type="number" name="luck" id="lucky" required>
+
+            <label for="image">Upload your Image</label>
+            <input type="file" name="image" id="image" >
+            <button type="submit" id="button">Click to get your Future</button>
+        </form>
+
+        <h2 id="result"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
